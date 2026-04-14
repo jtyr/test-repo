@@ -1,0 +1,11 @@
+name: On PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pre-commit:
+    name: Pre-Commit
+    uses: jtyr/shared-workflows/.github/workflows/pre-commit.yaml@main
